@@ -41,7 +41,10 @@ RCC::CR::HSEON::On::Set();
 while(!RCC::CR::HSERDY::Ready::IsSet())
 {
 }
-
+RCC::CFGR::SW::Hse::Set();
+while(!RCC::CFGR::SWS::Hse::IsSet())
+{
+}
 RCC::PLLCFGR::PLLM0::Set(4U); //Set VCO 2MHz==HSE/4==8 MHz/4
 RCC::PLLCFGR::PLLN0::Set(50U); //Set VCC Output == 100Mhz (>100Mhz)==VCO*50=2*50
 RCC::PLLCFGR::PLLP0::Pllp6::Set(); //Set PLL Output==16MHz==VCO output/6=100/6
@@ -91,7 +94,7 @@ return 1 ;
 
 Результат работы программы представлен на видео ниже:
 
-image::https://github.com/Dimooon174/Work04/blob/main/Photo/VIDEO.gif[]
+image::https://github.com/Alexandra174/Work04/blob/main/Photo/VIDEO.gif[]
 
 
 
