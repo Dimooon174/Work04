@@ -94,7 +94,7 @@ return 1 ;
 
 Результат работы программы представлен на видео ниже:
 
-image::https://github.com/Alexandra174/Work04/blob/main/Photo/VIDEO.gif[]
+image::https://github.com/Dimooon174/Work04/blob/main/Photo/VIDEO.gif[]
 
 
 
